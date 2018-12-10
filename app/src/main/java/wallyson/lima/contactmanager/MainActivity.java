@@ -31,6 +31,15 @@ public class MainActivity extends AppCompatActivity {
         Log.d("Reading: ", " Reading all contacts...");
         List<Contact> contactList = db.getAllContacts();
 
+        // Get 1 contact
+        Contact oneContact = db.getContact(1);
+        oneContact.setName("Wally");
+        oneContact.setPhoneNumber("0000-0000");
+        // Updated contact
+        int newContact = db.updateContact(oneContact);
+
+        Log.d("One Contact: ", "Name: " + oneContact.getName() + " Phone: " + oneContact.getPhoneNumber());
+
         for ( Contact c: contactList) {
             String log = "ID: " + c.getId() + ", Name: " + c.getName() + ", Phone: " + c.getPhoneNumber() + "\n";
             Log.d("Name: ", log);
