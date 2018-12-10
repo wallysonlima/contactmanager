@@ -1,5 +1,9 @@
 package Model;
 
+import android.database.sqlite.SQLiteDatabase;
+
+import java.util.List;
+
 public class Contact {
     private int id;
     private String name;
@@ -40,4 +44,6 @@ public class Contact {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+
 }
