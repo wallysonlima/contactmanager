@@ -11,6 +11,8 @@ import Model.Contact;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    // Test
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
